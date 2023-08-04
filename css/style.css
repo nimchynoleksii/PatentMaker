@@ -1,71 +1,88 @@
 /* manrope-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/manrope-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* manrope-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/manrope-v14-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manrope-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/manrope-v14-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* Reset */
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 html {
-    box-sizing: border-box;
-    /* background-image: url(/img/svg/mainbanner.svg); */
-    /* background-repeat: no-repeat; */
-}  
-* , *::before , *::after {
-    box-sizing: inherit;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-  font-family: 'Manrope';
-  background: url(/img/svg/mainbanner.svg);
-  background-repeat: no-repeat;
+  font-family: "Manrope";
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
 }
 
 header {
   width: 100%;
   height: 143px;
-
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
+
 .header {
   width: 100%;
   height: 40px;
-  background-image: linear-gradient(to left, #24469E, #3E82BE);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(to left, #24469e, #3e82be);
 }
 
 .header-content-wrap {
-  width: 1200px;
+  width: 100%;
   height: 40px;
+}
+
+.header-top-content {
   display: flex;
   align-items: center;
   justify-content: right;
   padding-right: 60px;
   position: relative;
+  height: 100%;
+}
+
+@media (max-width: 1239.98px) {
+  .header {
+    padding: 0 20px;
+  }
 }
 
 .header-icons {
   display: flex;
   justify-content: space-between;
   width: 92px;
-  height: 27px; 
+  height: 27px;
   margin-left: 20px;
 }
 
@@ -95,29 +112,29 @@ header {
   color: rgba(255, 255, 255, 0.353);
 }
 
-.lang-wrap{ 
-  border-radius:5px;
-  background-color: #6284BF;
-  display: inline-block; 
-  max-height:27px;
+.lang-wrap {
+  border-radius: 5px;
+  background-color: #6284bf;
+  display: inline-block;
+  max-height: 27px;
   width: 53px;
-  overflow:hidden;
-  transition: all .2s ease;
+  overflow: hidden;
+  transition: all 0.2s ease;
   position: absolute;
   right: 0;
   top: 6px;
 }
 
-.lang-wrap:hover{
-  max-height:100px;
+.lang-wrap:hover {
+  max-height: 100px;
 }
 
-.lang-item{
+.lang-item {
   color: #fff;
-  font-weight:400;
+  font-weight: 400;
   font-size: 16px;
-  display:flex;
-  cursor:pointer;
+  display: flex;
+  cursor: pointer;
   padding: 2px;
 }
 
@@ -126,17 +143,16 @@ header {
   left: 8px;
 }
 
-.lang-wrap .lang-item:first-child div:after{
-  content:url(/img/svg/langIconVector.svg) ;
+.lang-wrap .lang-item:first-child div:after {
+  content: url(/img/svg/langIconVector.svg);
   display: inline-block;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   position: relative;
   left: 5px;
   bottom: 2px;
 }
 
 .header-nav {
-  max-width: 1920px;
   height: 103px;
   display: flex;
   justify-content: center;
@@ -144,30 +160,42 @@ header {
 }
 
 .header-nav-wrap {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   height: 103px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 1239.98px) {
+  .header-nav-wrap {
+    padding: 0 20px;
+  }
 }
 
 .nav-wrap {
-  width: 578px;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  overflow:hidden;
-  transition: all .2s ease;
-  right: 0;
-  top: 6px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  margin-right: 30px;
 }
 
 .logo {
-  padding-right: 15px;
-  padding-top: 9px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
+
+.logo a {
+  display: inline-block;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -177,116 +205,109 @@ a {
   align-items: center;
 }
 
-.nav-wrap:hover{
-  max-height:100px;
+.nav-wrap:hover {
+  max-height: 100px;
 }
 
-.nav{
+.nav {
   color: #fff;
-  font-weight:400;
+  font-weight: 400;
   font-size: 16px;
-  display:flex;
-  cursor:pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .nav a {
   position: relative;
+  display: inline-block;
 }
 
-.nav-wrap .nav:first-child a:after,
-.nav-wrap .nav:nth-child(2) a:after,
-.nav-wrap .nav:nth-child(4) a:after{
-  content:url(/img/svg/navigationVector.svg) ;
+.nav:not(:last-child) {
+  margin-right: 30px;
+}
+
+.has-child a::after {
+  background-image: url(/img/svg/navigationVector.svg);
+  content: "";
   display: inline-block;
-  transition: all .2s ease;
+  height: 6px;
+  width: 10px;
+  transition: all 0.2s ease;
   position: relative;
   left: 5px;
   bottom: 2px;
 }
 
 .free-trial-wrap {
-  width: 125px;
-  height: 44px;
-  margin-left: 35px;
+  margin-right: 30px;
 }
 
 .free-trial {
-  width: 125px;
-  height: 44px;
-  background-image: linear-gradient(to left, #EF5559, #3E82BE);
+  padding: 9px 20px;
+  background-image: linear-gradient(to left, #ef5559, #3e82be);
   font-weight: 700;
   font-size: 16px;
+  line-height: 25.6px;
   color: white;
 }
 
 .tools {
   display: flex;
-  justify-content: space-around;
-  width: 70px;
-  margin-left: 15px;
+  align-items: center;
 }
 
 .tools a {
-  width: 26px;
-  height: 26px;
-} 
-
-.hr {
-  width: 100%px;
-  height:1px;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 
-hr {
-  width: 1200px;
-  size: 1px;
-  background-color: rgba(255, 255, 255, 0.109);
+.tools a:not(:last-child) {
+  margin-right: 18px;
+}
+
+.main-top-section {
+  background-image: url(/img/svg/mainbanner.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 143px;
 }
 
 .main-page {
   width: 100%;
-  height: 637px;
   display: flex;
   justify-content: center;
 }
 
 .main-page-wrap {
-  width: 1200px;
-  height: 637px;
+  padding: 113px 0 189px;
   position: relative;
 }
 
 .main-text {
-  width: 617px;
-  height: 637px;
+  max-width: 58%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .main-text h3 {
-  width: 253px;
-  height: 26px;
   font-weight: 800;
   font-size: 20px;
-  color: #EF5559;
+  color: #ef5559;
   line-height: 24px;
-  margin-top: 114px;
+  margin-bottom: 10px;
 }
 
 .main-text h1 {
-  width: 617px;
-  height: 128px;
   font-weight: 800;
   font-size: 54px;
-  color: #57A6EB;
+  color: #57a6eb;
   line-height: 64.8px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .main-text h2 {
-  width: 572px;
-  height: 74px;
   font-weight: 400;
   font-size: 24px;
   line-height: 38.4px;
@@ -295,7 +316,7 @@ hr {
 }
 
 .arrow-circle {
-  color: #337AB7;
+  color: #337ab7;
   cursor: pointer;
   text-decoration: none;
   font-size: 18px;
@@ -313,7 +334,7 @@ hr {
   border-radius: 50%;
 }
 .arrow-circle .arrow-circle-iconcircle {
-  transition: stroke-dashoffset .3s ease;
+  transition: stroke-dashoffset 0.3s ease;
   stroke-dasharray: 95;
   stroke-dashoffset: 95;
 }
@@ -328,12 +349,11 @@ hr {
   width: 259px;
   height: 60px;
   line-height: 25.6px;
-  background-image: linear-gradient(to left, #EF5559, #3E82BE);
+  background-image: linear-gradient(to left, #ef5559, #3e82be);
   font-weight: 700;
   font-size: 16px;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 135px;
 }
 
 .get-started a {
@@ -349,9 +369,16 @@ hr {
 
 .main-example {
   position: absolute;
-  top: 67px;
-  left: 543px;
+  bottom: 0;
+  right: 0;
   z-index: 10;
+  max-width: 47%;
+  width: 100%;
+  top: 65px;
+  background-image: url(/img/svg/imageBuild.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .rectangle-main-page {
@@ -359,4 +386,94 @@ hr {
   height: 152.5px;
   position: absolute;
   top: 624px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 112px 0px;
+}
+
+.technology-content-wrap {
+  max-width: 1200px;
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.technology-photo:before {
+  content: "";
+  display: inline-block;
+  width: 386px;
+  height: 362px;
+  background-image: url(/img/svg/technologyBackgroundDots.svg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  bottom: -50px;
+  left: -50px;
+  border: 1px solid red;
+}
+
+.technology-photo {
+  display: flex;
+  flex: 0 1 473px;
+  background-image: url(/img/svg/technologyPhoto.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.technology-text {
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-name {
+  padding-top: 59px;
+  
+}
+
+.article-name h5::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  margin-right: 9px;
+  background-color: #57A6EB;
+  
+}
+.article-name h5 {
+font-size: 16px;
+font-weight: 700;
+line-height: 26px;
+color: #57A6EB;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+}
+
+.technology-text h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62.4px;
+  color: #071E57;
+}
+
+.technology-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #474747;
+  padding-top: 39px;
 }
