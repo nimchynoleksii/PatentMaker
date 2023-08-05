@@ -72,12 +72,6 @@ header {
   height: 100%;
 }
 
-@media (max-width: 1239.98px) {
-  .header {
-    padding: 0 20px;
-  }
-}
-
 .header-icons {
   display: flex;
   justify-content: space-between;
@@ -157,6 +151,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #000000b3;
 }
 
 .header-nav-wrap {
@@ -168,11 +163,6 @@ header {
   align-items: center;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-@media (max-width: 1239.98px) {
-  .header-nav-wrap {
-    padding: 0 20px;
-  }
 }
 
 .nav-wrap {
@@ -271,6 +261,98 @@ a {
   background-position: center;
   background-size: cover;
   padding-top: 143px;
+  position: relative;
+}
+  .main-top-section .container {
+    position: relative;
+  }
+.test {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 20px;
+  max-width: 42.5%;
+  max-height: 552px;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/svg/info.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  box-shadow: -15px 30px 40px 0px rgba(60, 68, 96, 0.15);
+}
+
+.test-btn::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.test-btn {
+  width: 143px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 7px;
+  position: absolute;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.test-btn.white{
+  color: #24479E;
+  background-color: #fff;
+  bottom: 251px;
+  left: -91px;
+}
+.test-btn.white::after {
+  background-color: #fff;
+  left: -38px;
+}
+
+.test-btn.light-blue{
+  color: #fff;
+  background-color: #57a6eb;
+  top: -30px;
+  right: 7%;
+}
+.test-btn.light-blue::after {
+  background-color: #57a6eb;
+  top: -21px;
+}
+
+.test-btn.blue{
+  color: #fff;
+  background-color: #3874B6;
+  bottom: 94px;
+  left: -51px;
+}
+.test-btn.blue::after {
+  background-color: #3874B6;
+  left: -44px;
+}
+.test-btn.dark-blue{
+  color: #fff;
+  background-color: #24479E;
+  bottom: -17px;
+  right: 31%;
+}
+.test-btn.dark-blue::after {
+  background-color: #24479E;
+  bottom: -24px;
+}
+
+.main-top-section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 156px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(/img/svg/rectangleMainPage.svg);
 }
 
 .main-page {
@@ -367,20 +449,6 @@ a {
   margin: 20px;
 }
 
-.main-example {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-  max-width: 47%;
-  width: 100%;
-  top: 65px;
-  background-image: url(/img/svg/imageBuild.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .rectangle-main-page {
   width: 1920px;
   height: 152.5px;
@@ -388,41 +456,56 @@ a {
   top: 624px;
 }
 
-section {
+
+
+.technology {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 112px 0px;
+  padding: 112px 0px 269px;
+  position: relative;
 }
+.technology::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 156px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(/img/svg/rectangletechnology.png);
+  background-repeat: no-repeat;
+}
+
 
 .technology-content-wrap {
-  max-width: 1200px;
-  width: 100%;
-  background-color: lightgrey;
   display: flex;
+  gap: 100px;
   justify-content: space-between;
+  position: relative;
 }
 
-.technology-photo:before {
+.technology-content-wrap:before {
   content: "";
   display: inline-block;
-  width: 386px;
-  height: 362px;
-  background-image: url(/img/svg/technologyBackgroundDots.svg) ;
+  max-width: 386px;
+  max-height: 362px;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/svg/technologyBackgroundDots.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
   z-index: 1;
-  bottom: -50px;
-  left: -50px;
-  border: 1px solid red;
+  bottom: -122px;
+  left: -159px;
 }
 
 .technology-photo {
-  display: flex;
-  flex: 0 1 473px;
-  background-image: url(/img/svg/technologyPhoto.svg);
+  height: 541px;
+  width: 100%;
+  flex: 0 1 39%;
+  background-image: url(/img/svg/technologyPhoto.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -430,18 +513,16 @@ section {
   z-index: 10;
 }
 
-
-
 .technology-text {
+  flex: 0 1 627px;
+  display: flex;
   max-width: 50%;
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
 }
 
 .article-name {
   padding-top: 59px;
-  
 }
 
 .article-name h5::before {
@@ -450,24 +531,23 @@ section {
   width: 26px;
   height: 2px;
   margin-right: 9px;
-  background-color: #57A6EB;
-  
+  background-color: #57a6eb;
 }
 .article-name h5 {
-font-size: 16px;
-font-weight: 700;
-line-height: 26px;
-color: #57A6EB;
-text-transform: uppercase;
-display: flex;
-align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #57a6eb;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .technology-text h1 {
   font-weight: 700;
   font-size: 52px;
   line-height: 62.4px;
-  color: #071E57;
+  color: #071e57;
 }
 
 .technology-text p {
