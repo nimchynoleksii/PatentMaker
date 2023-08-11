@@ -151,7 +151,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000b3;
+  background-color: hsla(223, 63%, 38%, 0.512);
 }
 
 .header-nav-wrap {
@@ -521,7 +521,7 @@ a {
   flex-wrap: wrap;
 }
 
-.article-name {
+.technology-text .article-name {
   padding-top: 59px;
 }
 
@@ -556,4 +556,454 @@ a {
   line-height: 25.6px;
   color: #474747;
   padding-top: 39px;
+}
+
+.assistant {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 13px;
+  position: relative;
+  background-color: #F6F8FA;
+}
+
+.assistant-contant-wrap {
+  position: relative;
+}
+.assistant-content-wrap:before {
+  content: "";
+  display: inline-block;
+  max-width: 386px;
+  max-height: 362px;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/svg/technologyBackgroundDots.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  bottom: 215px;
+  left: 150px;
+}
+
+.assistant-text .article-name {
+  padding-bottom: 6px;
+}
+
+.assistant-text h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62.4px;
+  color: #071e57;
+  padding-bottom: 61px;
+}
+
+.assistant-text h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38.4px;
+  color: #474747;
+  margin-bottom: 81px;
+}
+
+.assistant-examples {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 81px;
+  justify-content: space-between;
+}
+
+.assistant-icons-wrap {
+  width: 58%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.assistant-icon {
+  width: 200px;
+  height: 241px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: -15px 40px 40px hsla(227, 23%, 31%, 0.106);
+  z-index: 2;
+}
+
+.assistant-icon-image {
+  height: 55px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
+.assistant-icon-image-bg {
+  height: 105px;
+  width: 105px;
+  margin-top: 25px;
+  background-color:#F6F8FA;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assistant-icon-image::after {
+  background-image: url(/img/svg/assistantIconsVector.svg);
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 14px;
+  position: relative;
+  left: 44px;
+  bottom: -90px;
+}
+
+.assistant-icon a {
+  width: 100%;
+}
+
+.assistant-icon p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25.6px;
+  text-align: center;
+  color: #071E57 ;
+}
+
+.more-icon p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color:#3874B6;
+  text-transform: uppercase;
+}
+.assistant-vector-wrap {
+  width: 55px;
+
+}
+.assistant-main-vector {
+  background-image: url(/img/svg/assistantMainVector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.assistant-scrin-wrap {
+  width: 37%;
+  background-image: url(/img/svg/assistantScrin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.buy-now {
+  width: 222px;
+  height: 60px;
+  line-height: 25.6px;
+  background-image: linear-gradient(to left, #ef5559, #3e82be);
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buy-now a {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buy-now p {
+  margin: 20px;
+}
+
+.free-trial-assistant {
+  width: 222px;
+  height: 60px;
+  line-height: 25.6px;
+  background-color: #FDE6E6;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #EE5559;
+}
+
+.free-trial-assistant a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.free-trial-assistant p {
+  margin: 20px;
+  color: #EE5559;
+}
+
+.free-trial-assistant .arrow-circle .arrow-circle-icon {
+  background-color: #EE5559;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.free-trial-assistant {
+  margin-left: 70px;
+}
+.assistant-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  margin: 80px 0px 13px 0px;
+}
+
+.automation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 773px;
+}
+
+.automation::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 156px;
+  position: absolute;
+  top: 0;
+  background-image: url(/img/svg/automationRectangle.svg);
+  background-repeat: no-repeat;
+}
+
+.automation-content-wrap {
+  padding-top: 234px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.automation-text {
+  flex: 0 1 627px;
+  display: flex;
+  max-width: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.automation-text h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62.4px;
+  color: #071e57;
+}
+
+.automation-text .article-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #474747;
+  padding-top: 55px;
+}
+
+.automation-button {
+  width: 246px;
+  height: 60px;
+  background-color: #FDE6E6;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #EE5559;
+  align-items: center;
+  margin-top: 61px;
+}
+
+.automation-button a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.automation-button-text {
+  color: #EE5559;
+  line-height: 25.6px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.automation-scrin {
+  background-image: url(/img/svg/automationScrin.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: 42%;
+  z-index: 10;
+  box-shadow: -15px 30px 40px 0px hsla(227, 23%, 31%, 0.211);
+}
+
+.automation-scrin:before {
+  content: "";
+  display: inline-block;
+  max-width: 386px;
+  max-height: 362px;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/svg/technologyBackgroundDots.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  bottom: 260px;
+  left: 960px;
+}
+
+
+
+
+.contact-us {
+  width: 100%;
+  height: 762px;
+  background-image: url(/img/svg/contactUsBackground.svg);
+}
+
+.contact-us-text {
+  width: 55% ;
+}
+
+.contact-us-text h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62.4px;
+  padding-top: 55px;  
+}
+
+.contact-us p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: white;
+}
+
+.contact-us .container {
+  width: 100%;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-top: 49px;
+}
+
+form input:focus-visible {
+  outline: none;
+  padding-top: 20px;
+  height: 50px;
+
+}
+
+form input {
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.name-form-label {
+  position: relative;
+}
+.name-form-label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/svg/contactUsFormNameIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.phone-form-label {
+  position: relative;
+}
+.phone-form-label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/svg/contactUsFormPhoneIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.email-form-label {
+  position: relative;
+}
+.email-form-label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/svg/contactUsFormEmailIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.message-form-label {
+  position: relative;
+}
+.message-form-label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/svg/contactUsFormMessageIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+form label {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.86px;
+  padding-left: 40px;
+}
+
+form textarea:focus-visible {
+  outline: none;
+  padding-top: 20px;
+  height: 100px;
+}
+
+form textarea {
+  resize: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  overflow-y: auto;
+  color: white;
+}
+
+.submit {
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25.6px;
+  text-transform: uppercase;
+  margin: 16px 39px;
 }
