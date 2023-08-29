@@ -1,133 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PatentMaker</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PatentMaker</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-    <header>
-        <div class="header">
-            <div class="header-content-wrap">
-                <div class="container">
-                    <div class="header-top-content">
-                        <div class="header-icons">
-                            <a href="#">
-                                <div class="background-icon">
-                                    <img src="./img/svg/iconInst.svg" alt="" />
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="background-icon fb">
-                                    <img src="./img/svg/iconFb.svg" alt="" />
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="background-icon">
-                                    <img src="./img/svg/iconTwit.svg" alt="" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="header-phone">
-                            <a href="tel:491788811388" class="header-phone-link"><img class="phone-icon" src="./img/svg/iconePhone.svg" alt="" /></a> 
-                            <a href="tel:+491788811388" class="phone-number">+49 1788811388</a>
-                        </div>
-                        <div class="lang-wrap">
-                            <div class="lang-item">
-                                <div>EN</div>
-                            </div>
-                            <div class="lang-item">
-                                <div>UA</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-nav">
-                <div class="container">
-                    <div class="header-nav-wrap">
-                        <div class="logo">
-                            <a href="#"><img src="./img/svg/Frame.svg" alt="logo" /></a>
-                        </div>
-                        <div class="content-wrap">
-                            <div class="nav-wrap">
-                                <div class="nav has-child">
-                                    <a href="#">Product</a>
-                                </div>
-                                <div class="nav has-child">
-                                    <a href="#">Firm</a>
-                                </div>
-                                <div class="nav">
-                                    <a href="#">Pricing</a>
-                                </div>
-                                <div class="nav has-child">
-                                    <a href="#">Resources</a>
-                                </div>
-                                <div class="nav">
-                                    <a href="#">Support</a>
-                                </div>
-                                <div class="nav">
-                                    <a href="#">Contact</a>
-                                </div>
-                            </div>
-                            <div class="free-trial-wrap">
-                                <button class="free-trial">
-                                    FREE TRIAL
-                                </button>
-                            </div>
-                            <div class="tools">
+    <body>
+        <header>
+            <div class="header">
+                <div class="header-content-wrap">
+                    <div class="container">
+                        <div class="header-top-content">
+                            <div class="header-icons">
                                 <a href="#">
-                                    <img src="./img/svg/iconToolsSearch.svg" alt="" />
+                                    <div class="background-icon">
+                                        <img
+                                            src="./img/svg/iconInst.svg"
+                                            alt=""
+                                        />
+                                    </div>
                                 </a>
-                                <a>
-                                    <img src="./img/svg/iconToolsProfile.svg" alt="" />
+                                <a href="#">
+                                    <div class="background-icon fb">
+                                        <img
+                                            src="./img/svg/iconFb.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="background-icon">
+                                        <img
+                                            src="./img/svg/iconTwit.svg"
+                                            alt=""
+                                        />
+                                    </div>
                                 </a>
                             </div>
-                            <div id="hamburger-block">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                            <div class="header-phone">
+                                <a
+                                    href="tel:491788811388"
+                                    class="header-phone-link"
+                                    ><img
+                                        class="phone-icon"
+                                        src="./img/svg/iconePhone.svg"
+                                        alt=""
+                                /></a>
+                                <a href="tel:+491788811388" class="phone-number"
+                                    >+49 1788811388</a
+                                >
+                            </div>
+                            <div class="lang-wrap">
+                                <div class="lang-item">
+                                    <div>EN</div>
+                                </div>
+                                <div class="lang-item">
+                                    <div>UA</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mobile-menu">
-                <div class="nav-mobile">
-                    <div class="nav-mobile-item has-child">
-                        <a href="#">Product</a>
-                    </div>
-                    <div class="nav-mobile-item has-child">
-                        <a href="#">Firm</a>
-                    </div>
-                    <div class="nav-mobile-item">
-                        <a href="#">Pricing</a>
-                    </div>
-                    <div class="nav-mobile-item has-child">
-                        <a href="#">Resources</a>
-                    </div>
-                    <div class="nav-mobile-item">
-                        <a href="#">Support</a>
-                    </div>
-                    <div class="nav-mobile-item">
-                        <a href="#">Contact</a>
+                <div class="header-nav">
+                    <div class="container">
+                        <div class="header-nav-wrap">
+                            <div class="logo">
+                                <a href="#"
+                                    ><img src="./img/svg/Frame.svg" alt="logo"
+                                /></a>
+                            </div>
+                            <div class="content-wrap">
+                                <nav class="main-nav">
+                                    <ul class="menu-list">
+                                        <li class="menu-list-item has-child">
+                                            <a href="#" class="menu-list-item-link">Product</a>
+                                            <ul class="menu-list-submenu">
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test1</a>
+                                                </li>
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list-item has-child">
+                                            <a href="#" class="menu-list-item-link">Firm</a>
+                                            <ul class="menu-list-submenu">
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test1</a>
+                                                </li>
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list-item">
+                                            <a href="#" class="menu-list-item-link">Pricing</a>
+                                            <ul class="menu-list-submenu">
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test1</a>
+                                                </li>
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list-item has-child">
+                                            <a href="#" class="menu-list-item-link">Resources</a>
+                                            <ul class="menu-list-submenu">
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test1</a>
+                                                </li>
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-list-item">
+                                            <a href="#" class="menu-list-item-link">Support</a>
+                                            <ul class="menu-list-submenu">
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test1</a>
+                                                </li>
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test2</a>
+                                                </li>
+                                            </ul>
+                                        </li><li class="menu-list-item">
+                                            <a href="#" class="menu-list-item-link">Contact</a>
+                                            <ul class="menu-list-submenu">
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test1</a>
+                                                </li>
+                                                <li class="menu-list-submenu-item">
+                                                    <a href="#">test2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- <div class="nav-wrap">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Dropdown</button>
+                                        <ul class="dropdown-content">
+                                          <li><a href="#">Link 1</a></li>
+                                          <li><a href="#">Link 2</a></li>
+                                          <li><a href="#">Link 3</a></li>
+                                          <li><a href="#">Link 4</a></li>
+                                        </ul>
+                                      </div>
+                                    <div class="nav has-child">
+                                        <a href="#">Product</a>
+                                    </div>
+                                    <div class="nav has-child">
+                                        <a href="#">Firm</a>
+                                    </div>
+                                    <div class="nav">
+                                        <a href="#">Pricing</a>
+                                    </div>
+                                    <div class="nav has-child">
+                                        <a href="#">Resources</a>
+                                    </div>
+                                    <div class="nav">
+                                        <a href="#">Support</a>
+                                    </div>
+                                    <div class="nav">
+                                        <a href="#">Contact</a>
+                                    </div> -->
+                                </div>
+                                <div class="free-trial-wrap">
+                                    <button class="free-trial">
+                                        FREE TRIAL
+                                    </button>
+                                </div>
+                                <div class="tools">
+                                    <a href="#">
+                                        <img
+                                            src="./img/svg/iconToolsSearch.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a>
+                                        <img
+                                            src="./img/svg/iconToolsProfile.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div id="hamburger-block">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tools mobile">
-                    <a href="#">
-                        <img src="./img/svg/iconToolsSearch.svg" alt="" />
-                    </a>
-                    <a>
-                        <img src="./img/svg/iconToolsProfile.svg" alt="" />
-                    </a>
+                <div class="mobile-menu">
+                    <div class="nav-mobile">
+                        <div class="nav-mobile-item has-child">
+                            <a href="#">Product</a>
+                        </div>
+                        <div class="nav-mobile-item has-child">
+                            <a href="#">Firm</a>
+                        </div>
+                        <div class="nav-mobile-item">
+                            <a href="#">Pricing</a>
+                        </div>
+                        <div class="nav-mobile-item has-child">
+                            <a href="#">Resources</a>
+                        </div>
+                        <div class="nav-mobile-item">
+                            <a href="#">Support</a>
+                        </div>
+                        <div class="nav-mobile-item">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="tools mobile">
+                        <a href="#">
+                            <img src="./img/svg/iconToolsSearch.svg" alt="" />
+                        </a>
+                        <a>
+                            <img src="./img/svg/iconToolsProfile.svg" alt="" />
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
+        </header>
+        <main>
             <section class="main-top-section">
                 <div class="container">
                     <div class="main-page-wrap">
@@ -420,7 +523,9 @@
                             </p>
                             <button class="automation-button">
                                 <a href="" class="link-automation-button">
-                                    <p class="automation-button-text">MEET OUR PRODUCT</p>
+                                    <p class="automation-button-text">
+                                        MEET OUR PRODUCT
+                                    </p>
                                 </a>
                             </button>
                         </div>
@@ -433,26 +538,64 @@
                     <div class="contact-us-content-wrap">
                         <div class="contact-us-text">
                             <h1>Contact Us</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie ornare viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a congue</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Cras molestie ornare viverra.
+                                Interdum et malesuada fames ac ante ipsum primis
+                                in faucibus. Mauris a congue
+                            </p>
                             <form action="#" method="post">
-                                <label for="name" class="name-form-label">Name*</label>
-                                <input type="text" id="name" name="name-form" required>
-                                <br>
-                                
-                                <label for="phone" class="phone-form-label">Phone</label>
-                                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-                                <br>
-                                
-                                <label for="email" class="email-form-label">Email*</label>
-                                <input type="email" id="email" name="email" required>
-                                <br>
-                                
-                                <label for="message" class="message-form-label">Message</label>
-                                <textarea id="message" name="message" rows="1" required></textarea>
-                                <br>
+                                <label for="name" class="name-form-label"
+                                    >Name*</label
+                                >
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name-form"
+                                    required
+                                />
+                                <br />
+
+                                <label for="phone" class="phone-form-label"
+                                    >Phone</label
+                                >
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    pattern="[0-9]{10}"
+                                    required
+                                />
+                                <br />
+
+                                <label for="email" class="email-form-label"
+                                    >Email*</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
+                                <br />
+
+                                <label for="message" class="message-form-label"
+                                    >Message</label
+                                >
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                                <br />
                                 <button class="get-started">
                                     <a class="arrow-circle" href="#">
-                                        <input type="submit" class="submit" value="Send message">
+                                        <input
+                                            type="submit"
+                                            class="submit"
+                                            value="Send message"
+                                        />
                                         <svg
                                             class="arrow-circle-icon"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -482,23 +625,21 @@
                                     </a>
                                 </button>
                             </form>
-
                         </div>
                         <div class="contact-us-photo"></div>
                     </div>
                 </div>
             </section>
         </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menu = document.querySelector('.mobile-menu');
-            const menuOpener = document.querySelector('#hamburger-block')
-            menuOpener.addEventListener('click', () => {
-                menu.classList.toggle('open');
-                menuOpener.classList.toggle('open');
-            })
-        });
-    </script>
-</body>
-
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menu = document.querySelector(".mobile-menu");
+                const menuOpener = document.querySelector("#hamburger-block");
+                menuOpener.addEventListener("click", () => {
+                    menu.classList.toggle("open");
+                    menuOpener.classList.toggle("open");
+                });
+            });
+        </script>
+    </body>
 </html>
