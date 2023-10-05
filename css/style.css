@@ -913,7 +913,7 @@ h1 {
   width: 100%;
   height: 156px;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   background-image: url(/img/svg/rectangletechnology.png);
   background-repeat: no-repeat;
 }
@@ -966,7 +966,7 @@ h1 {
   padding-top: 59px;
 }
 
-.technology-article-name h5::before {
+h5::before {
   content: "";
   display: inline-block;
   width: 26px;
@@ -974,7 +974,7 @@ h1 {
   margin-right: 9px;
   background-color: #57a6eb;
 }
-.technology-article-name h5 {
+h5 {
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
@@ -1039,13 +1039,14 @@ h1 {
   padding-bottom: 13px;
   position: relative;
   background-color: #f6f8fa;
+  margin-top: 92px;
 }
 
 .assistant-contant-wrap {
   position: relative;
 }
 
-.assistant-text .technology-article-name {
+.assistant-name .technology-article-name {
   padding-bottom: 6px;
 }
 
@@ -1408,18 +1409,214 @@ h1 {
   }
 }
 
+/*video block//////////////////////////*/
+.video-presentation {
+  padding: 0 20px;
+}
+.video-presentation-container {
+  width: 100%;
+  max-width: 1345px;
+  position: relative;
+  background-color: #3E82BE;
+  margin-top: 200px;
+  min-height: 700px;
+  background-image: url(/img/video-presentation-background.png) ;
+}
+.main-video-wrap {
+  position: absolute;
+  top: -95px;
+  left:50%;
+  transform:translate(-50%, 0);
+  min-width: 780px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #57a6eb;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+} */
+
+/* h5::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  margin-right: 9px;
+  background-color: #57a6eb;
+} */
+.video-presentation {
+  display: flex;
+  justify-content: center;
+}
+.main-video {
+    width: 100%;
+    position: relative;
+    border: solid #071E57 7px;
+    border-radius: 33px;
+    overflow: hidden;
+    max-width: 780px;
+  }
+  
+  #myVideo {
+    width: 100%;
+    display: block;
+  }
+
+  #myVideo[poster] {
+    width: 100%;
+    height: auto;
+  }
+  
+  #video-over {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+  
+  #video-play {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px hsla(0, 0%, 100%, 0.308);
+    z-index: 1;
+    cursor: pointer;
+    transition: .2s ease;
+    transition-property: opacity, visibility;
+    background-color:#EE5559;
+  }
+  
+#video-play:hover {
+  box-shadow: 0 0 0 25px hsla(0, 0%, 100%, 0.308);
+}
+
+  #video-play::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 47px;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-left-color: hsla(0, 0%, 100%, 0.518);
+    border-right-width: 0;
+    transition: transform .2s ease;
+  }
+  
+  #video-play:hover::before {
+    transform: scale(1.2);
+  }
+  
+  .video-is-playing #video-over {
+    display: block;
+  }
+  
+  .video-is-playing #video-play {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .video-presentation-text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .video-presentation-text h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .video-presentation-text p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    padding-top: 14px;
+  }
+
+  @media (max-width: 1000px) {
+    .main-video-wrap {
+      min-width: 85%;
+    }
+
+    #video-play {
+      width: 80px;
+      height: 80px;
+    }
+
+    #video-play::before {
+      left: 30px;
+    }
+  }
+
+  @media (max-width:600px) {
+    .main-video-wrap {
+      min-width: 90%;
+    }
+    
+    #video-play {
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 0 0 15px hsla(0, 0%, 100%, 0.308);
+    }
+    
+    #video-play::before {
+      left: 19px;
+    }
+  }
+
+  @media (max-width: 388px) {
+    .video-presentation-text {
+      bottom: -50px;
+    }
+  }
+
+
 /* /////////////////////// */
 
+.contact-us-content-wrap {
+  display: flex;
+
+}
 .contact-us {
   width: 100%;
-  height: 762px;
+  /* height: 762px; */
   background-image: url(/img/svg/contactUsBackground.svg);
   background-repeat: no-repeat;
   margin-top: 70px;
 }
 
 .contact-us-text {
-  width: 55%;
+  width: 45%;
 }
 
 .contact-us-text h1 {
@@ -1556,5 +1753,15 @@ input:-internal-autofill-selected {
   /* background-image: none !important; */
   background-color: transparent !important;
   /* color: fieldtext !important; */
+}
+
+.contact-us-photo {
+  width: 55%;
+  position: relative;
+}
+.contact-us-photo img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
